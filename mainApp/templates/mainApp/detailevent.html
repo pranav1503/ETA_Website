@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="detailDiv">
+      <img id='detailPoster' src="/media/{{ details.pic }}" alt="">
+      <h1 align="center" style="color:#ff4f4f;margin-top:10px;">{{ details.title }}</h1>
+      <br><br>
+      <h1 style="color:#ff4f4f;">Details:</h1>
+      <br>
+      <h3 style="color:white">{{ details.desciption }}</h3>
+      <br><br>
+      <h1 style="color:#ff4f4f;">Registration Form:</h1>
+      <br>
+      <h3 style="color:white;"><a href="{{ details.link }}">{{ details.link }}</a></h3>
+      <br><br>
+      <h1 style="color:#ff4f4f;">Last Date for Registration:</h1>
+      <br>
+      <h3 style="color:white;">{{ details.last_date }}</h3>
+    </div>
+{% endblock %}

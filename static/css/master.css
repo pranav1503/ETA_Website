@@ -1,0 +1,125 @@
+
+@media only screen and (min-width: 1024px) {
+  .pc-view{
+    margin:auto;
+    width:60%;
+    margin-top:5em;
+  }
+  .bnd-pc{
+    color: #ff4f4f;
+  }
+
+ .links{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+  }
+  .links:hover{
+    border-bottom: 2px solid white;
+  }
+
+  .mySlides{
+    height: 100px;
+  }
+
+  .imgDiv{
+    margin:auto;
+    width:60%;
+  }
+
+  .eventDiv{
+    margin: auto;
+    width: 60%;
+    margin-top: 3em;
+  }
+
+  .detailDiv{
+    margin: auto;
+    width: 70%;
+    margin-top: 100px;
+  }
+
+  #detailPoster{
+    width: 20em;
+    height: 20em;
+    border: 1px solid white;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .subs-div{
+    margin-top: 10vh;
+  }
+
+  .subs-inp{
+    margin-top: 50px;
+  }
+  .subs-inp:focus{
+    outline: none;
+    border: 3px solid white;
+  }
+
+  .subs-inp:hover{
+    outline: inherit;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .nav-item .links{
+    color: black;
+    text-decoration: none;
+  }
+
+  .imgDiv{
+    margin: auto;
+    width: 100%;
+  }
+
+  .eventDiv{
+    margin: auto;
+    width: 80%;
+  }
+
+  .event-head{
+    font-size: 80px;
+    text-align: center;
+  }
+
+  .event-underline{
+    display: none;
+  }
+
+  .notification{
+    display: none;
+  }
+
+  .subs{
+    position: absolute;
+    top: 500px;;
+  }
+
+  .subs_form{
+    margin-top: 80px;
+  }
+
+  #detailPoster{
+    margin: auto;
+    height: 500px;
+    width: 100%;
+  }
+
+  .detailDiv{
+    margin: auto;
+    width: 70%;
+    margin-top: 100px;
+  }
+
+}

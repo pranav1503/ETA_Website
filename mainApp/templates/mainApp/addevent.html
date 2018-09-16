@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <div class="jumbotron container" style="margin-top:10vh">
+    <h1 align='center'>Add Event</h1>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input type="submit" class="btn btn-lg btn-block btn-primary"  name="" value="Add Event">
+    </form>
+  </div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<h1 align="center" style="font-size:4em;margin-top:10vh;color:white;">Innovation.Technology.Fun.</h1>
+
+<div class="imgDiv" style="margin-top:7vh;">
+  <img class="mySlides" style="height:500px;width:100%;" src="{% static "images/1.jpg" %}" style="width:100%">
+  <img class="mySlides" style="height:500px;width:100%;" src="{% static "images/2.jpg" %}" style="width:100%">
+  <img class="mySlides" style="height:500px;width:100%;" src="{% static "images/3.jpg" %}" style="width:100%">
+  <img class="mySlides" style="height:500px;width:100%;" src="{% static "images/5.jpg" %}" style="width:100%">
+  <img class="mySlides" style="height:500px;width:100%;" src="{% static "images/6.jpg" %}" style="width:100%">
+</div>
+
+
+<div class="eventDiv">
+  <h1 id='event' class="event-head" style="color:#ff4f4f;font-size:10vh;padding:1vh;margin-bottom:10vh;">Upcoming Events</h1>
+    <div class="row">
+
+  {% for i in lists  %}
+      <div class="col-lg-6" style="margin-bottom:5vh;">
+        <div class="abc" style="margin:auto;width:90%;border:1px solid white;padding:10px;">
+          <a style="text-decoration:none;" href="{% url 'mainApp:detail' pk=i.pk %}">
+          <img src="media/{{ i.pic }}" alt="" style="height:40vh;width:100%">
+          <h5 style="color:white;">{{ i.title }}(Click for details)</h5></a>
+        </div>
+      </div>
+  {% endfor %}
+  </div>
+</div>
+<script src="{% static "js/home.js" %}">
+
+</script>
+
+{% endblock %}
